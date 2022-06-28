@@ -1,16 +1,24 @@
 .main-contacto{
     position: relative;
-    background-color: #262626;
-    height: 75vh;
+    background-image: url(../imagenes/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
     background-size: cover;
     background-position: center;
-    padding: 220px 0 220px ;
+    padding: 6em 0 6em ;
+
+
 
     h1{
         font-size:6em;
         color: #ffffff;
         text-transform: uppercase;
         font-weight: bold;
+        text-align: center;
+        position: relative;
     }
 
     p{
@@ -19,11 +27,26 @@
         font-size: 2.5em;
         color: rgb(255, 255, 255);
         padding-bottom: 25px;      
+        text-align: center;    
+        position: relative; 
     }
-
+}
     .formulario{
         height: 100vh;
-     
-     }
-    
+        background-color: #262626;
+        border-top: #ffffff solid 5px;
+
+}
+
+.main-contacto:before{
+    content: "";
+    min-width: 100%;
+    min-height: 70vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    background:rgba(0, 0, 0, 0.805);
+
 }

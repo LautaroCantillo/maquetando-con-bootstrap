@@ -10,11 +10,13 @@
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   padding: 220px 0 220px;
+  text-align: center;
 }
 
 .main h1 {
-  font-size: 6em;
+  font-size: 9em;
   margin-right: 3em;
   color: #e7e7e7;
   text-transform: uppercase;
@@ -23,23 +25,44 @@
 
 .main p {
   margin-top: 1em;
-  margin-right: 1em;
+  margin-right: 0;
   padding: 0;
-  font-size: 2.5em;
+  font-size: 4em;
   color: #e7e7e7;
   padding-bottom: 25px;
 }
 
 @media all and (max-width: 500px) {
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
   .main h1 {
-    font-size: 4em;
+    font-size: 5em;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  .main p {
+    margin: 0;
+  }
+  .main-historia h1 {
+    font-size: 1em;
   }
 }
 
 .main .readMore {
   font-size: 2em;
   background: #e39c04;
-  color: #ccc;
+  color: white;
   border-radius: 5px;
   padding: 10px 20px;
   text-decoration: none;
@@ -74,7 +97,7 @@
   position: absolute;
   font-size: 2em;
   background-color: rgba(25, 26, 34, 0.846);
-  color: whitesmoke;
+  color: white;
   text-align: center;
   border-radius: 15px;
   margin-top: 3em;
@@ -88,11 +111,15 @@
 
 .main-cliente {
   position: relative;
-  background-color: #262626;
-  min-height: 100vh;
+  background-image: url(../imagenes/clientes.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
   background-size: cover;
   background-position: center;
-  padding: 220px 0 220px;
+  padding: 6em 0 6em;
 }
 
 .main-cliente h1 {
@@ -100,6 +127,8 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
+  position: relative;
 }
 
 .main-cliente p {
@@ -108,19 +137,35 @@
   font-size: 2.5em;
   color: white;
   padding-bottom: 25px;
+  text-align: center;
+  position: relative;
 }
 
 .main-cliente .color {
   background-color: #262626;
 }
 
+.main-cliente:before {
+  content: "";
+  min-width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.805);
+}
+
 .main-contacto {
   position: relative;
-  background-color: #262626;
-  height: 75vh;
+  background-image: url(../imagenes/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 70vh;
   background-size: cover;
   background-position: center;
-  padding: 220px 0 220px;
+  padding: 6em 0 6em;
 }
 
 .main-contacto h1 {
@@ -128,6 +173,8 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
+  text-align: center;
+  position: relative;
 }
 
 .main-contacto p {
@@ -136,34 +183,58 @@
   font-size: 2.5em;
   color: white;
   padding-bottom: 25px;
+  text-align: center;
+  position: relative;
 }
 
-.main-contacto .formulario {
+.formulario {
   height: 100vh;
+  background-color: #262626;
+  border-top: #ffffff solid 5px;
+}
+
+.main-contacto:before {
+  content: "";
+  min-width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.805);
+}
+
+@media screen and (max-width: 480px) {
+  .main-contacto h1 {
+    font-size: 4em;
+  }
+  .main-contacto p {
+    font-size: 2.5em;
+  }
 }
 
 * {
   padding: 0%;
   margin: 0%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Staatliches', cursive;
 }
 
 /*----------------------   HEADER   --------------------------------*/
-header {
-  position: absolute;
+.header {
+  position: relative;
   z-index: 10;
   width: 100%;
 }
 
 .navbar {
-  padding: 50px 0;
+  padding: 30px 0;
+  background-color: #f9be3e;
 }
 
 .navbar-brand {
   font-weight: bold;
   font-size: 1.5em;
   text-transform: uppercase;
-  color: #ccc !important;
+  color: white !important;
 }
 
 .nav-item {
@@ -173,15 +244,16 @@ header {
 }
 
 .nav-link {
-  color: #ccc;
+  color: white !important;
   letter-spacing: 2px;
   font-size: 2em;
   font-weight: 700;
+  margin-left: 2em;
 }
 
 .nav-link:hover {
-  background: #dcdde1 !important;
-  color: #262626 !important;
+  background: #ffffff !important;
+  color: #3f3e3e !important;
   border-radius: 5px;
   -webkit-transition: all 0.6s ease 0s;
   transition: all 0.6s ease 0s;
@@ -191,7 +263,7 @@ header {
 /*----------------------   SECTION VIDEO  --------------------------------*/
 /*----------------------   SECTION barra  --------------------------------*/
 .barra {
-  background-color: black;
+  background-color: #434343;
   border: solid #e39c04 8px;
   padding: 1.5em;
 }
@@ -261,7 +333,13 @@ header {
   margin-left: 4em;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
+  .servicio h3 {
+    font-size: 1em;
+  }
+}
+
+@media all and (max-width: 800px) {
   .servicio h3 {
     font-size: 1em;
   }
@@ -271,6 +349,7 @@ header {
 .galeria {
   background-color: #262626;
   padding: 80px 0;
+  border-top: whitesmoke solid 1em;
 }
 
 .galeria img {
@@ -284,10 +363,10 @@ header {
 .main-catalogo {
   position: relative;
   background-color: #262626;
-  height: 70vh;
+  height: 30%;
   background-size: cover;
   background-position: center;
-  padding: 220px 0 220px;
+  padding: 100px 0px 100px 0px;
 }
 
 .main-catalogo h1 {
@@ -307,9 +386,24 @@ header {
   text-align: center;
 }
 
-/*--------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------   CONTACTO    ----------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------*/
+.slider {
+  width: 90%;
+  margin: 0% auto;
+}
+
+.slide {
+  background-color: #262626;
+}
+
+@media screen and (max-width: 480px) {
+  .main-catalogo h1 {
+    font-size: 3em;
+  }
+  .main-cliente h1 {
+    font-size: 3em;
+  }
+}
+
 /*--------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------   HISTORIA   ----------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------*/
