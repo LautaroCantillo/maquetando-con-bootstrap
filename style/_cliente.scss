@@ -50,4 +50,34 @@
 
 }
 
+.galeria-clientes{
+    background-color: #262626;
+}
 
+@media screen and (max-width:480px)
+{
+    .main-cliente{
+        h1{
+            font-size: 5em;
+            font-weight: bold;
+        }
+        p{
+            font-size: 2em;
+        }
+    }
+
+   
+
+
+}
+
+
+@media screen and (max-width: 800px){
+    
+}
+
+
+
+@media screen and (max-width: 1200px){
+    
+}

@@ -1,12 +1,13 @@
 * {
   padding: 0%;
   margin: 0%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins',  sans-serif;
 }
 
 .main {
   position: relative;
-  background: url(../imagenes/img.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.45)), to(rgba(5, 7, 12, 0.45))), url(../imagenes/img.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.45), rgba(5, 7, 12, 0.45)), url(../imagenes/img.jpg);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
@@ -16,47 +17,28 @@
 }
 
 .main h1 {
-  font-size: 9em;
-  margin-right: 3em;
-  color: #e7e7e7;
+  position: relative;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: verdana;
+  font-size: 8em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
 }
 
 .main p {
+  position: relative;
   margin-top: 1em;
   margin-right: 0;
   padding: 0;
   font-size: 4em;
+  font-weight: bold;
   color: #e7e7e7;
   padding-bottom: 25px;
-}
-
-@media all and (max-width: 500px) {
-  .main {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  .main h1 {
-    font-size: 5em;
-    margin: 0;
-    margin-bottom: 1em;
-  }
-  .main p {
-    margin: 0;
-  }
-  .main-historia h1 {
-    font-size: 1em;
-  }
+  text-transform: uppercase;
 }
 
 .main .readMore {
@@ -68,45 +50,31 @@
   text-decoration: none;
 }
 
-.container-video {
-  position: relative;
-  height: 100vh;
+@media screen and (max-width: 500px) {
+  .main h1 {
+    font-size: 3em;
+  }
+  .main p {
+    font-size: 2em;
+  }
 }
 
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+@media (min-width: 500px) and (max-width: 720px) {
+  .main h1 {
+    font-size: 4.5em;
+  }
+  .main p {
+    font-size: 2.5em;
+  }
 }
 
-.video-container video {
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translate -50%, -50%;
-          transform: translate -50%, -50%;
-}
-
-.text-video {
-  position: absolute;
-  font-size: 2em;
-  background-color: rgba(25, 26, 34, 0.846);
-  color: white;
-  text-align: center;
-  border-radius: 15px;
-  margin-top: 3em;
-  margin-left: 2em;
-  margin-right: 1em;
-  padding: 1em;
-  box-shadow: -7px 10px 20px 10px rgba(25, 26, 34, 0.86);
-  -webkit-box-shadow: -7px 10px 20px 10px rgba(25, 26, 34, 0.86);
-  -moz-box-shadow: -7px 10px 20px 10px rgba(25, 26, 34, 0.86);
+@media (min-width: 720px) and (max-width: 1024px) {
+  .main h1 {
+    font-size: 5.5em;
+  }
+  .main p {
+    font-size: 3.5em;
+  }
 }
 
 .main-cliente {
@@ -153,6 +121,20 @@
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.805);
+}
+
+.galeria-clientes {
+  background-color: #262626;
+}
+
+@media screen and (max-width: 480px) {
+  .main-cliente h1 {
+    font-size: 5em;
+    font-weight: bold;
+  }
+  .main-cliente p {
+    font-size: 2em;
+  }
 }
 
 .main-contacto {
@@ -212,55 +194,96 @@
   }
 }
 
-* {
-  padding: 0%;
-  margin: 0%;
-  font-family: 'Staatliches', cursive;
+/*--------------------------------------------------CATALOGO-----------------------------------------*/
+.galeria {
+  background-color: #fff1c4;
+  padding: 80px 0;
+  border-top: whitesmoke solid 1em;
 }
 
-/*----------------------   HEADER   --------------------------------*/
-.header {
-  position: relative;
-  z-index: 10;
+.galeria img {
+  max-width: 100%;
+  padding: 5px;
   width: 100%;
+  -webkit-box-shadow: 0 0 15px rgba 0, 0, 0, 0.3;
+          box-shadow: 0 0 15px rgba 0, 0, 0, 0.3;
 }
 
-.navbar {
-  padding: 30px 0;
-  background-color: #f9be3e;
+.main-catalogo {
+  position: relative;
+  background-color: #8ca5ca;
+  height: 30%;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0px 100px 0px;
 }
 
-.navbar-brand {
+.main-catalogo h1 {
+  font-size: 6em;
+  color: #ffffff;
+  text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.5em;
+  text-align: center;
+}
+
+.main-catalogo p {
+  margin-top: 1em;
+  padding: 0;
+  font-size: 2.5em;
+  color: white;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.slider {
+  width: 90%;
+  margin: 0% auto;
+}
+
+.slide {
+  background-color: #8ca5ca;
+}
+
+@media screen and (max-width: 480px) {
+  .main-catalogo h1 {
+    font-size: 4em;
+    font-weight: bold;
+  }
+  .main-catalogo p {
+    font-size: 2em;
+  }
+}
+
+.main-historia {
+  position: relative;
+  background-color: #262626;
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  padding: 220px 0 220px;
+}
+
+.main-historia h1 {
+  font-size: 6em;
+  color: #ffffff;
   text-transform: uppercase;
-  color: white !important;
+  font-weight: bold;
 }
 
-.nav-item {
-  font-weight: 600;
-  text-transform: uppercase;
-  padding-left: 50px;
+.main-historia p {
+  margin-top: 1em;
+  padding: 0;
+  font-size: 2.5em;
+  color: white;
+  padding-bottom: 25px;
 }
 
-.nav-link {
-  color: white !important;
-  letter-spacing: 2px;
-  font-size: 2em;
-  font-weight: 700;
-  margin-left: 2em;
+@media screen and (max-width: 480px) {
+  .main-historia h1 {
+    font-size: 4em;
+  }
 }
 
-.nav-link:hover {
-  background: #ffffff !important;
-  color: #3f3e3e !important;
-  border-radius: 5px;
-  -webkit-transition: all 0.6s ease 0s;
-  transition: all 0.6s ease 0s;
-}
-
-/*----------------------   MAIN   --------------------------------*/
-/*----------------------   SECTION VIDEO  --------------------------------*/
 /*----------------------   SECTION barra  --------------------------------*/
 .barra {
   background-color: #434343;
@@ -304,131 +327,146 @@
 }
 
 /*----------------------   SECTION 3 nuestos servicios  --------------------------------*/
-.fondo-servicios {
-  background-image: url(../imagenes/laptop-in-empty-room.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  background-size: cover;
+.servicio1 {
+  background-color: #fff1c4;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-.servicio {
-  background-color: rgba(227, 156, 4, 0.823);
-  box-shadow: 11px 20px 26px 2px rgba(0, 0, 0, 0.63);
-  -webkit-box-shadow: 11px 20px 26px 2px rgba(0, 0, 0, 0.63);
-  -moz-box-shadow: 11px 20px 26px 2px rgba(0, 0, 0, 0.63);
-  color: #ffffff;
-  border-radius: 25px;
-  padding: 3em;
-  margin: 0.5em;
+.text1 {
   text-align: center;
+  padding-top: 100px;
 }
 
-.servicio h3 {
+.text1 h1 {
+  font-size: 4em;
+}
+
+.text1 p {
   font-size: 2em;
 }
 
-.row .servicio {
-  margin-top: 10em;
-  margin-left: 4em;
+.servicio2 {
+  background-color: #8cbaff;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-@media all and (max-width: 500px) {
-  .servicio h3 {
-    font-size: 1em;
+.text2 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.text2 h1 {
+  font-size: 4em;
+}
+
+.text2 p {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 500px) {
+  .text1 {
+    font-size: 10px;
+  }
+  .text2 {
+    font-size: 10px;
   }
 }
 
-@media all and (max-width: 800px) {
-  .servicio h3 {
-    font-size: 1em;
-  }
+.container-video {
+  position: relative;
+  height: 100vh;
 }
 
-/*--------------------------------------------------CATALOGO-----------------------------------------*/
-.galeria {
-  background-color: #262626;
-  padding: 80px 0;
-  border-top: whitesmoke solid 1em;
-}
-
-.galeria img {
-  max-width: 100%;
-  padding: 5px;
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   width: 100%;
-  -webkit-box-shadow: 0 0 15px rgba 0, 0, 0, 0.3;
-          box-shadow: 0 0 15px rgba 0, 0, 0, 0.3;
+  height: 100%;
+  overflow: hidden;
 }
 
-.main-catalogo {
+.video-container video {
   position: relative;
-  background-color: #262626;
-  height: 30%;
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0px 100px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate -50%, -50%;
+          transform: translate -50%, -50%;
 }
 
-.main-catalogo h1 {
-  font-size: 6em;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-}
-
-.main-catalogo p {
-  margin-top: 1em;
-  padding: 0;
-  font-size: 2.5em;
+.text-video {
+  position: absolute;
+  font-size: 2em;
+  background-color: rgba(25, 26, 34, 0.846);
   color: white;
-  padding-bottom: 25px;
   text-align: center;
+  border-radius: 15px;
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 1em;
+  padding: 1em;
+  box-shadow: -7px 10px 20px 10px rgba(25, 26, 34, 0.86);
+  -webkit-box-shadow: -7px 10px 20px 10px rgba(25, 26, 34, 0.86);
+  -moz-box-shadow: -7px 10px 20px 10px rgba(25, 26, 34, 0.86);
 }
 
-.slider {
-  width: 90%;
-  margin: 0% auto;
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
-.slide {
-  background-color: #262626;
-}
-
-@media screen and (max-width: 480px) {
-  .main-catalogo h1 {
-    font-size: 3em;
-  }
-  .main-cliente h1 {
-    font-size: 3em;
-  }
-}
-
-/*--------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------   HISTORIA   ----------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------*/
-.main-historia {
+/*----------------------   HEADER   --------------------------------*/
+.header {
   position: relative;
-  background-color: #262626;
-  min-height: 70vh;
-  background-size: cover;
-  background-position: center;
-  padding: 220px 0 220px;
+  z-index: 10;
+  width: 100%;
 }
 
-.main-historia h1 {
-  font-size: 6em;
-  color: #ffffff;
-  text-transform: uppercase;
+.navbar {
+  padding: 30px 0;
+  background-color: #f9be3e;
+}
+
+.navbar-brand {
   font-weight: bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: white !important;
 }
 
-.main-historia p {
-  margin-top: 1em;
-  padding: 0;
-  font-size: 2.5em;
-  color: white;
-  padding-bottom: 25px;
+.nav-item {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-left: 50px;
+}
+
+.nav-link {
+  color: white !important;
+  letter-spacing: 2px;
+  font-size: 2em;
+  font-weight: 700;
+  margin-left: 2em;
+}
+
+.nav-link:hover {
+  background: #ffffff !important;
+  color: #3f3e3e !important;
+  border-radius: 5px;
+  -webkit-transition: all 0.6s ease 0s;
+  transition: all 0.6s ease 0s;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar {
+    padding: 30px 0;
+    background-color: #f9be3e;
+    position: relative;
+  }
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
@@ -499,7 +537,7 @@
 }
 
 .pie-pagina .grupo-2 {
-  background-color: #0a1a2a;
+  background-color: #000000;
   padding: 15px 10px;
   text-align: center;
   color: #fff;

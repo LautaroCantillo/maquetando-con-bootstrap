@@ -1,13 +1,16 @@
 @import "generales";
 @import "cliente";
 @import "contacto";
-@import "responsive";
-
+@import "catalogo";
+@import "historia";
+@import "servicios";
+@import "sectionVideo";
 
 *{
     padding: 0%;
     margin: 0%;
-    font-family: 'Staatliches', cursive;
+
+   
 }
 
 /*----------------------   HEADER   --------------------------------*/
@@ -55,202 +58,19 @@
 }
 
 
+@media screen and (max-width: 990px){
 
-
-/*----------------------   MAIN   --------------------------------*/
-
-
-/*----------------------   SECTION VIDEO  --------------------------------*/
-
-
-
-/*----------------------   SECTION barra  --------------------------------*/
-
-.barra{
-    background-color: rgb(67, 67, 67);
-    border: solid rgb(227,156,4) 8px;
-    padding: 1.5em;
-}
-
-.barra-ul{
-    font-size: 2em;
-    color: #dcdde1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 4em;
-    margin-left: 0%;
-    padding: .5em;
-    text-align: center;
-
-}
-
-.bar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    
-
-}
-
-
-
-/*----------------------   SECTION 3 nuestos servicios  --------------------------------*/
-
-
-.fondo-servicios{
-    background-image: url(../imagenes/laptop-in-empty-room.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
-    background-size: cover;
-}
-
-.servicio{
-    background-color: rgba(227, 156, 4, 0.823);
-    box-shadow: 11px 20px 26px 2px rgba(0,0,0,0.63);
--webkit-box-shadow: 11px 20px 26px 2px rgba(0,0,0,0.63);
--moz-box-shadow: 11px 20px 26px 2px rgba(0,0,0,0.63);
-    color: #ffffff;
-    border-radius: 25px;
-    padding: 3em;
-    margin: 0.5em;
-    text-align: center;
-    
-}
-
-.servicio h3{
-    font-size: 2em;
-}
-
-
-
-.row .servicio{
-    margin-top: 10em;
-    margin-left: 4em;
-}
-
-@media all and (max-width:500px)
- {
-  .servicio h3{
-    font-size: 1em;
-  }
-}
-@media all and (max-width:800px)
- {
-  .servicio h3{
-    font-size: 1em;
-  }
-}
-
-
-
-
-
-/*--------------------------------------------------CATALOGO-----------------------------------------*/
-
-.galeria{
-    background-color: #262626;
-    padding: 80px 0 ;
-    border-top: whitesmoke solid 1em;
-    
-}
-
-.galeria img{
-    max-width: 100%;
-    padding: 5px;
-    width: 100%;
-    box-shadow: 0 0 15px rgba (0,0,0,0.3);
-}
-
-.main-catalogo{
-    position: relative;
-    background-color: #262626;
-    height: 30%;
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0px 100px 0px;
-    
-    
-}
-
-.main-catalogo h1{
-    font-size:6em;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    
-}
-
-.main-catalogo p{
-    margin-top: 1em;
-    padding: 0;
-    font-size: 2.5em;
-    color: rgb(255, 255, 255);
-    padding-bottom: 25px;
-    text-align: center;
-    
-}
-
- .slider{
-    width: 90%;
-    margin: 0% auto;  
-    
- }
-
- .slide{
-    background-color:#262626 ; 
-    
-    
- }
-
-@media screen and (max-width:480px)
-{
-    .main-catalogo h1{
-        font-size:3em;
-
+    .navbar{
+        padding: 30px 0;
+        background-color:rgb(249, 190, 62);
+        position: relative;
     }
-
-    .main-cliente h1{
-        font-size: 3em;
-    }
-   
-
-
-}
-
-/*--------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------   HISTORIA   ----------------------------------------*/
-/*--------------------------------------------------------------------------------------------------------*/
-
-.main-historia{
-    position: relative;
-    background-color: #262626;
-    min-height: 70vh;
-    background-size: cover;
-    background-position: center;
-    padding: 220px 0 220px ;
     
 }
 
-.main-historia h1{
-    font-size:6em;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
-.main-historia p{
-    margin-top: 1em;
-    padding: 0;
-    font-size: 2.5em;
-    color: rgb(255, 255, 255);
-    padding-bottom: 25px;
-    
-}
+
+
 
 
 
@@ -306,7 +126,7 @@
     color: rgb(227,156,4);
 }
 .pie-pagina .grupo-2{
-    background-color: #0a1a2a;
+    background-color: #000000;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
@@ -314,6 +134,8 @@
 .pie-pagina .grupo-2 small{
     font-size: 15px;
 }
+
+
 @media screen and (max-width:800px){
     .pie-pagina .grupo-1{
         width: 90%;
