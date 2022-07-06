@@ -244,13 +244,25 @@
   background-color: #8ca5ca;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .main-catalogo h1 {
-    font-size: 4em;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .main-catalogo p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 720px) {
+  .main-catalogo h1 {
+    font-size: 4.5em;
     font-weight: bold;
   }
   .main-catalogo p {
     font-size: 2em;
+    font-weight: bold;
   }
 }
 
@@ -278,9 +290,9 @@
   padding-bottom: 25px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .main-historia h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 
