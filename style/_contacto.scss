@@ -19,6 +19,7 @@
         font-weight: bold;
         text-align: center;
         position: relative;
+        padding-top: 1em;
     }
 
     p{
@@ -29,6 +30,7 @@
         padding-bottom: 25px;      
         text-align: center;    
         position: relative; 
+        text-transform: uppercase;
     }
 }
     .formulario{
@@ -52,28 +54,31 @@
 }
 
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 500px){
     .main-contacto{
         h1{
             font-size: 4em;
         }
         p{
-            font-size: 2.5em;
+            font-size: 2em;
         }
     }
 
 
 }
 
+@media  (min-width: 500px)and (max-width: 720px){
+    .main-contacto{
+        h1{
+            font-size: 5em;
+        }
+        p{
+            font-size: 2.5em;
+        }
+    }
 
-
-
-@media screen and (max-width: 800px){
-    
 }
 
+@media  (min-width: 720px)and (max-width: 1024px){
 
-
-@media screen and (max-width: 1200px){
-    
 }

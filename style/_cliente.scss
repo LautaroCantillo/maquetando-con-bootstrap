@@ -11,7 +11,7 @@
         padding: 6em 0 6em ;
     
     h1{
-        font-size:6em;
+        font-size:7em;
         color: #ffffff;
         text-transform: uppercase;
         font-weight: bold;
@@ -26,13 +26,13 @@
         color: rgb(255, 255, 255);
         padding-bottom: 25px;
         text-align: center;
-        position: relative;        
+        text-transform: uppercase;
+        position: relative;   
+        font-weight: bold;     
     }
 
 
-    .color{
-        background-color: #262626;
-    }
+    
 
 
 }
@@ -51,14 +51,14 @@
 }
 
 .galeria-clientes{
-    background-color: #262626;
+    background-color: #0d2033;
 }
 
-@media screen and (max-width:480px)
+@media screen and (max-width:500px)
 {
     .main-cliente{
         h1{
-            font-size: 5em;
+            font-size: 4em;
             font-weight: bold;
         }
         p{
@@ -71,13 +71,18 @@
 
 }
 
-
-@media screen and (max-width: 800px){
-    
+@media  (min-width: 500px)and (max-width: 720px){
+    .main-cliente{
+        h1{
+            font-size: 6em;
+            font-weight: bold;
+        }
+        p{
+            font-size: 2em;
+        }
+    }
 }
 
+@media  (min-width: 720px)and (max-width: 1024px){
 
-
-@media screen and (max-width: 1200px){
-    
 }

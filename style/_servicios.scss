@@ -1,14 +1,15 @@
 /*----------------------   SECTION barra  --------------------------------*/
 
 .barra {
-    background-color: rgb(67, 67, 67);
-    border: solid #e39c04 8px;
+    background-color: #E5E5E5;
+    border: solid #000000 8px;
     padding: 1.5em;
+    text-transform: uppercase;
 }
 
 .barra-ul {
     font-size: 2em;
-    color: #dcdde1;
+    color: #000000;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,10 +37,12 @@
 
 
 
-
+body{
+    background-color: #E5E5E5;
+}
 
 .servicio1 {
-    background-color: #fff1c4;
+    background-color: #14213D;
     padding-top: 25px;
     padding-bottom: 25px;
 
@@ -50,6 +53,7 @@
 .text1 {
     text-align: center;
     padding-top: 100px;
+    color: #ffff;
 
     h1 {
         font-size: 4em;
@@ -61,7 +65,7 @@
 }
 
 .servicio2 {
-    background-color: #8cbaff;
+    background-color: #E5E5E5;
     padding-top: 25px;
     padding-bottom: 25px;
 

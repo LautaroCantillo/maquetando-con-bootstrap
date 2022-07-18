@@ -16,19 +16,6 @@
   text-align: center;
 }
 
-.main h1 {
-  position: relative;
-  right: 50%;
-  -webkit-transform: translate(50%, -50%);
-          transform: translate(50%, -50%);
-  text-transform: uppercase;
-  font-family: verdana;
-  font-size: 8em;
-  font-weight: 700;
-  color: #f5f5f5;
-  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
-}
-
 .main p {
   position: relative;
   margin-top: 1em;
@@ -43,7 +30,7 @@
 
 .main .readMore {
   font-size: 2em;
-  background: #e39c04;
+  background: #FCA311;
   color: white;
   border-radius: 5px;
   padding: 10px 20px;
@@ -77,6 +64,18 @@
   }
 }
 
+.titulo {
+  position: relative;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  text-transform: uppercase;
+  font-size: 8em;
+  font-weight: 700;
+  color: #f5f5f5;
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
 .main-cliente {
   position: relative;
   background-image: url(../imagenes/clientes.webp);
@@ -91,7 +90,7 @@
 }
 
 .main-cliente h1 {
-  font-size: 6em;
+  font-size: 7em;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
@@ -106,11 +105,9 @@
   color: white;
   padding-bottom: 25px;
   text-align: center;
+  text-transform: uppercase;
   position: relative;
-}
-
-.main-cliente .color {
-  background-color: #262626;
+  font-weight: bold;
 }
 
 .main-cliente:before {
@@ -124,12 +121,22 @@
 }
 
 .galeria-clientes {
-  background-color: #262626;
+  background-color: #0d2033;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .main-cliente h1 {
-    font-size: 5em;
+    font-size: 4em;
+    font-weight: bold;
+  }
+  .main-cliente p {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 720px) {
+  .main-cliente h1 {
+    font-size: 6em;
     font-weight: bold;
   }
   .main-cliente p {
@@ -157,6 +164,7 @@
   font-weight: bold;
   text-align: center;
   position: relative;
+  padding-top: 1em;
 }
 
 .main-contacto p {
@@ -167,6 +175,7 @@
   padding-bottom: 25px;
   text-align: center;
   position: relative;
+  text-transform: uppercase;
 }
 
 .formulario {
@@ -185,9 +194,18 @@
   background: rgba(0, 0, 0, 0.805);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
   .main-contacto h1 {
     font-size: 4em;
+  }
+  .main-contacto p {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 720px) {
+  .main-contacto h1 {
+    font-size: 5em;
   }
   .main-contacto p {
     font-size: 2.5em;
@@ -196,52 +214,38 @@
 
 /*--------------------------------------------------CATALOGO-----------------------------------------*/
 .galeria {
-  background-color: #fff1c4;
+  background-color: #0d2033;
   padding: 80px 0;
-  border-top: whitesmoke solid 1em;
 }
 
 .galeria img {
   max-width: 100%;
   padding: 5px;
   width: 100%;
-  -webkit-box-shadow: 0 0 15px rgba 0, 0, 0, 0.3;
-          box-shadow: 0 0 15px rgba 0, 0, 0, 0.3;
 }
 
 .main-catalogo {
   position: relative;
-  background-color: #8ca5ca;
+  background-color: #0d2033;
   height: 30%;
   background-size: cover;
   background-position: center;
-  padding: 100px 0px 100px 0px;
+  padding-top: 150px;
 }
 
 .main-catalogo h1 {
   font-size: 6em;
+  padding-top: 3em;
+  padding-bottom: 0;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
 }
 
-.main-catalogo p {
-  margin-top: 1em;
-  padding: 0;
-  font-size: 2.5em;
-  color: white;
-  padding-bottom: 25px;
-  text-align: center;
-}
-
 .slider {
   width: 90%;
   margin: 0% auto;
-}
-
-.slide {
-  background-color: #8ca5ca;
 }
 
 @media screen and (max-width: 500px) {
@@ -268,11 +272,11 @@
 
 .main-historia {
   position: relative;
-  background-color: #262626;
+  background-color: #14213D;
   min-height: 70vh;
   background-size: cover;
   background-position: center;
-  padding: 220px 0 220px;
+  padding-top: 270px;
 }
 
 .main-historia h1 {
@@ -280,14 +284,6 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
-}
-
-.main-historia p {
-  margin-top: 1em;
-  padding: 0;
-  font-size: 2.5em;
-  color: white;
-  padding-bottom: 25px;
 }
 
 @media screen and (max-width: 500px) {
@@ -298,14 +294,15 @@
 
 /*----------------------   SECTION barra  --------------------------------*/
 .barra {
-  background-color: #434343;
-  border: solid #e39c04 8px;
+  background-color: #E5E5E5;
+  border: solid #000000 8px;
   padding: 1.5em;
+  text-transform: uppercase;
 }
 
 .barra-ul {
   font-size: 2em;
-  color: #dcdde1;
+  color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,8 +336,12 @@
 }
 
 /*----------------------   SECTION 3 nuestos servicios  --------------------------------*/
+body {
+  background-color: #E5E5E5;
+}
+
 .servicio1 {
-  background-color: #fff1c4;
+  background-color: #14213D;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -348,6 +349,7 @@
 .text1 {
   text-align: center;
   padding-top: 100px;
+  color: #ffff;
 }
 
 .text1 h1 {
@@ -359,7 +361,7 @@
 }
 
 .servicio2 {
-  background-color: #8cbaff;
+  background-color: #E5E5E5;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -414,11 +416,11 @@
 .text-video {
   position: absolute;
   font-size: 2em;
-  background-color: rgba(25, 26, 34, 0.846);
+  background-color: rgba(25, 26, 34, 0.951);
   color: white;
   text-align: center;
   border-radius: 15px;
-  margin-top: 3em;
+  margin-top: 8em;
   margin-left: 2em;
   margin-right: 1em;
   padding: 1em;
@@ -441,7 +443,7 @@
 
 .navbar {
   padding: 30px 0;
-  background-color: #f9be3e;
+  background-color: #FCA311;
 }
 
 .navbar-brand {
@@ -476,7 +478,7 @@
 @media screen and (max-width: 990px) {
   .navbar {
     padding: 30px 0;
-    background-color: #f9be3e;
+    background-color: #fca311;
     position: relative;
   }
 }
@@ -486,7 +488,7 @@
 /*--------------------------------------------------------------------------------------------------------*/
 .pie-pagina {
   width: 100%;
-  background-color: #e39c04;
+  background-color: #fca311;
 }
 
 .pie-pagina .grupo-1 {
@@ -545,7 +547,7 @@
 }
 
 .pie-pagina .grupo-1 .red-social a:hover {
-  color: #e39c04;
+  color: E5E5E5;
 }
 
 .pie-pagina .grupo-2 {
